@@ -59,9 +59,6 @@
                     <li class="page-scroll">
                         <a href="#about">Discussion</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -70,11 +67,9 @@
     </nav>
 
     <!-- Header -->
-    <header>
-        <div class="container">
-            <iframe src="https://interactive.twitter.com/wccompetitree/" style="border:none;"></iframe>
+        <div>
+            <iframe src="https://interactive.twitter.com/wccompetitree/" style="width: 120em;height: 120em"></iframe>
         </div>
-    </header>
 
     <!-- Introduction Grid Section -->
     <section id="portfolio">
@@ -88,9 +83,9 @@
         </div>
         <div>
             <h3>What is this Visualization?</h3>
-            <p class="small">This visualization is the glance of tweet activity of twitter users during 2014 WorldCup.</p>
+            <p class="small">This visualization provides the overview of the worldcup 2014 tournament as well as comprehensive match details. To highlight interesting moments, it also used social media data to detect the crowd’s attention.</p>
             <p class="small">The visualization shows tweet activity against for each team that participated in the championship and other match specific information.</p>
-            <p class="small">The visualization can be found <a href="The visualization can be found here https://interactive.twitter.com/wccompetitree/">here</a></p>
+            <p class="small">The visualization can be found <a href="https://interactive.twitter.com/wccompetitree/">here</a></p>
             <h3>Designers?</h3>
             <p class="small">Krist Wongsuphasawat and Kang Tu from Twitter Analytics team</p>
             <h3>Where is the data coming from?</h3>
@@ -98,48 +93,82 @@
             <h3>How to use it?</h3>
             <p class="small">To explore the data by team, use the "Highlight" dropdown to focus on any particular team. Using the buttons on top right, you can explore how the tournament unfolded on Twitter (Tweets per minute and Tweets during the match) or how it unfolded on the pitch (goals, yellow cards, and red cards).</p>
             <ul>
-                <li><p> User can use the dropdown at the top left of the application to select his team</p></li>
-                <li><p> This masks all the other teams and just highlights the selected team's participation throughout the tournament</p></li>
-                <li><p> The crests and troughs on the visualization of particular match represents the tweet activity</p></li>
+                <li><p class="small"> User can use the dropdown at the top left of the application to select his team</p></li>
+                <li><p class="small"> This masks all the other teams and just highlights the selected team's participation throughout the tournament</p>
+                <div style="width: 50%" align="left"><img src="img/dropDown.png"></div>
+                <div style="width: 50%"><img src="img/mask.png" width="1600px"></div>
+                </li>
+                <li><p> The crests and troughs on the visualization of particular match represents the tweet activity</p>
+                <div><img src="img/tweetActivity.png"></div>
+                </li>
+                <li><p> User can change modes by selecting required data view on top right corner of the visualization</p>
+                    <div><img src="img/modes.png"></div>
+                </li>
                 <li><p> User can click on any match of selected team</p></li>
-                <li><p> On selecting particular match we get a pop-up showing a worldmap that shows all the countries and the team they have tweeted</p></li>
+                <li><p> On selecting particular match we get a pop-up showing a worldmap that shows all the countries and the team they have tweeted</p>
+                <p>
+                    <div><img src="img/heatMap.png"></div>
+
+                </p>
+
+                </li>
             </ul>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="success" id="about">
+    <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Discussion</h2>
-                    <hr class="star-light">
+                    <hr class="star-primary">
                 </div>
             </div>
+        </div>
             <div>
                 <h3>Pros</h3>
-                <p class="small"></p>
                 <ul>
-                    <li><p> User who did not follow WorldCup can get a full picture of tournament with single glance</p></li>
-                    <li><p> The visualization has ability to reveal the data at several levels of detail, from  a broad overview to  the fine structure(by selecting particular team)</p></li>
-                    <li><p> The visualization presents many numbers in a small space</p>
-                    <p>Ex: The designers effectively used the same data to show multiple visualizations like:</p>
-                        <ul>
-                            <li><p>Tweets per minute</p></li>
-                            <li><p>Tweets during the match</p></li>
-                            <li><p>Goal summary</p></li>
-                            <li><p>Yellow cards and Red cards</p></li>
-                        </ul>
-                    </li>
-                    <li><p> Color coding for the entire visualization is great and visually appealing (It is in match to the uniform used by the teams)</p></li>
-                    <li><p> The popups on selecting particular match gives more details like:</p>
+                    <li><p class="small"> User who did not follow WorldCup can get a full picture of tournament in single glance</p></li>
+                    <li><p class="small"> The visualization has ability to reveal the data at several levels of detail, from  a broad overview to  the fine structure(by selecting particular team)</p></li>
+                    <li><p class="small"> Color coding for the entire visualization is great and visually appealing (It is in match to the uniform used by the teams)</p></li>
+                    <li><p>Visualizing each match as a pair of area chart is really innovative. The timelines are oriented vertically to make it easy to add labels</p></li>
+                    <li><p>Clicking on any team will fade out timelines of other teams and therefore highlight the selected team. This way users can follow the path of each team easily</p></li>
+                    <li><p class="small"> The popups on selecting particular match gives more details like:</p>
                         <ul>
                             <li><p>Heat map showing which part of the world is tweeting about which team</p></li>
-                            <li><p>Who are the top tweeted players for each team</p></li>
+                            <li><p>Who are the top tweeted players for each team</p>
+                                <p>
+                                <div style="width: 100%;">
+                                    <div style="float: left; width: 49.5%"><img src="img/heat.png" width="100%"></div>
+                                    <div style="float: left; width: 50.5%"><img src="img/tweets.png" width="100%" height="890px"></div>
+                                </div>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="small">The visualization presents many numbers in a small space</p>
+                        <p class="small">Ex: The designers effectively used the same data to show multiple visualizations like:</p>
+                        <ul>
+                            <li><p class="small">Tweets per minute</p></li>
+                            <li><p class="small">Tweets during the match</p></li>
+                            <li><p class="small">Goal summary</p></li>
+                            <li><p class="small">Yellow cards and Red cards</p></li>
+                            <div style="width: 100%;">
+                                <div style="float: left; width: 49.5%"><img src="img/1.png" width="100%"></div>
+                                <div style="float: left; width: 50.5%"><img src="img/2.png" width="100%"></div>
+                            </div>
+                            <div style="width: 100%;">
+                                <div style="float: left; width: 33%"><img src="img/goals.png" width="100%"></div>
+                                <div style="float: left; width: 33%"><img src="img/yellowCards.png" width="100%"></div>
+                                <div style="float: left; width: 33%"><img src="img/redCards.png" width="100%"></div>
+                            </div>
                         </ul>
                     </li>
                 </ul>
             </div>
+            <hr>
             <div>
                 <h3>Cons</h3>
                 <p class="small"></p>
@@ -147,348 +176,45 @@
                     <li><p> The usage of vertical scrolling could be clearly avoided if the entire visualization is changed to Landscape mode</p></li>
                     <li><p> When all teams information is shown, it looks like it's too much data to understand</p></li>
                     <li><p> The entire visualization could be divided in to two separate tabs one for group stage matches and other for knockout matches</p></li>
-                    <li><p> A single graph for each team showing how it performed throughout the tournament would have been much better visualization to compare performance between all the teams. Now it becomes really hard to compare between 2 teams for entire tournament</p></li>
-                    <li><p>---------------http://www.nytimes.com/interactive/2014/06/03/upshot/world-cup-draw-simulation.html?abt=0002&abg=0---------------</p></li>
-                    <li><p> The heat map is kind of misleading. I first thought it shows the countries that are supporting respective teams. But the heat map shows the teams that users in each country just mentioned. They may be supporting the team or making fun of the team as in the case of Brazil vs Germany match</p></li>
+                    <li><p> A single graph for each team showing how it performed throughout the tournament would have been much better visualization to compare performance between all the teams. Now it becomes really hard to compare between 2 teams for entire tournament</p>
+                        <p>Some type of visualizations like below wold have been a wise choice for comparison</p>
+                        <p><img src="img/betterComparision.png"></p>
+                    </li>
+                    <li><p> The heat map is kind of misleading. I first thought it shows the countries that are supporting respective teams. But the heat map shows the teams that users in each country just mentioned. They may be supporting the team or making fun of the team as in the case of Brazil vs Germany match. So it needs sentiment analysis</p></li>
+                    <li><p>Zoom option could have made the visualization more interesting. The visualization when zoomed out could have shown only scores and when zoomed in or expanded could have shown full match details</p></li>
+                    <li><p>Generalizing the same visualization to other kind of games can be challenging. The visualization worked for Football because of its strict 90 minute time frame. This might not be the case with other games like Tennis</p></li>
                 </ul>
             </div>
-        </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="text-center">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                        <h3>About Me</h3>
+                        <p>Phani Theja Swarup, Vempalli<br>Masters Student at UIC<br>pvempa2@uic.edu</p>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/pub/phani-theja-swarup-v/24/222/5" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                                <a href="https://www.facebook.com/swarup.theja" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Your Website 2014
+                        <h3>About This Report</h3>
+                        <p>This report is submitted as a part of Viewer's Choice presentation for CS 424 course at UIC. The details of course can be found <a href="http://www.evl.uic.edu/aej/424/index.html#">here</a>.</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visble-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery -->
+   <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
